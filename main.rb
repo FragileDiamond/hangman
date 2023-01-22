@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative '../../22_lesson/hangman/lib/console_interface'
-require_relative '../../22_lesson/hangman/lib/game'
+require_relative 'lib/console_interface'
+require_relative 'lib/game'
 
 word = File.readlines("#{__dir__}/data/words.txt", chomp: true).sample
 game = Game.new(word)
